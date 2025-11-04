@@ -1,4 +1,4 @@
-nome: Deploy Back-end
+name: Deploy Back-end
 on:
   workflow_dispatch:
 jobs:

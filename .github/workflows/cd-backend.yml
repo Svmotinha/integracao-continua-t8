@@ -13,7 +13,7 @@ jobs:
           registry: ghcr.io
           username: ${{github.repository_owner}}
           password: ${{secrets.GITHUB_TOKEN}}
-      - name: Construir e enviaar a imagem docker
+      - name: Construir e enviar a imagem docker
         uses: docker/build-push-action@v6
         with:
           context: sgcmapi/
@@ -26,5 +26,5 @@ jobs:
       - name: Deploy
         uses: webacademyufac/deploy-action@main
         with:
-          app-id: ${{ secrets.DEPLOY_APP_ID}}
+          app-id: ${{ secrets.DEPLOY_API_ID}}
           api-key: ${{ secrets.DEPLOY_API_KEY}}

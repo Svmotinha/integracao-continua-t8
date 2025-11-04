@@ -24,7 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Deploy
-        uses: Svmotinha/deploy-action@main
+        uses: Webacademyufac/deploy-action@main
         with:
           app-id: ${{ secrets.DEPLOY_APP_ID}}
           api-key: ${{ secrets.DEPLOY_API_KEY}}

@@ -12,7 +12,7 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{github.repository_owner}}
-          password: ${secrets.github_token}
+          password: ${{secrets.github_token}}
       - name: Construir e enviaar a imagem docker
         uses: docker/build-push-action@v6
         with:
